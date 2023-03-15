@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.widgets_generys">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
-        android:label="widgets_generys"
+        android:label="Widgets Galery - Flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
