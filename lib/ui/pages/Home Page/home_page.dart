@@ -6,7 +6,7 @@ import 'package:widgets_generys/ui/theme/text_styles.dart';
 
 import '../../utils/texts_app.dart';
 import 'Widgets/cards_home.dart';
-import 'Widgets/drawe_home.dart';
+import 'Widgets/drawer_home.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -25,16 +25,19 @@ class HomePage extends StatelessWidget {
         margin: const EdgeInsets.only(top: 16),
         height: Get.height,
         width: Get.width,
-        child: Wrap(
-          spacing: 16,
-          runSpacing: 16,
-          alignment: WrapAlignment.center,
-          children: List.generate(
-            listCardHome.length,
-            (i) {
-              final dataCard = listCardHome[i];
-              return CardHome(dataCard: dataCard, index: i);
-            },
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: Wrap(
+            spacing: 16,
+            runSpacing: 16,
+            alignment: WrapAlignment.center,
+            children: List.generate(
+              listCardHome.length,
+              (i) {
+                final dataCard = listCardHome[i];
+                return CardHome(dataCard: dataCard, index: i);
+              },
+            ),
           ),
         ),
       ),

@@ -7,3 +7,6 @@ export './ui/pages/Dialog%20Page/dialog_page.dart';
 
 //TextPages
 export './ui/pages/Texts%20Page/text_page.dart';
+
+//Inpust Page
+export './ui/pages/Inputs/inputs_page.dart';

@@ -18,4 +18,7 @@ abstract class Routes {
 
   // ignore: constant_identifier_names
   static const DETAILSOURSECODE = '/detailSourseCode';
+
+  // ignore: constant_identifier_names
+  static const INPUTSPAGE = '/inputsPage';
 }

@@ -19,6 +19,10 @@ abstract class AppPages {
       page: () => const TextsPage(),
     ),
     GetPage(
+      name: Routes.INPUTSPAGE,
+      page: () => const InputsPage(),
+    ),
+    GetPage(
       name: Routes.DETAILSOURSECODE,
       page: () => DetailSourseCode(
         titleSourseCode: Get.arguments['title'],

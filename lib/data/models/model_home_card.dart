@@ -12,6 +12,6 @@ class ModelCardHome {
 final listCardHome = [
   ModelCardHome(title: 'Shows Dialogs', icon: Icons.window_rounded, route: Routes.DIALOGPAGE),
   ModelCardHome(title: 'Auto Texts', icon: Icons.text_fields_rounded, route: Routes.TEXTSPAGE),
-  ModelCardHome(title: 'Shows Dialogs', icon: Icons.window_rounded, route: Routes.DIALOGPAGE),
+  ModelCardHome(title: 'Inputs', icon: Icons.input_outlined, route: Routes.INPUTSPAGE),
   ModelCardHome(title: 'Shows Dialogs', icon: Icons.window_rounded, route: Routes.DIALOGPAGE),
 ];

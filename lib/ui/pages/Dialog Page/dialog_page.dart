@@ -20,10 +20,10 @@ class DialogPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        margin: const EdgeInsets.only(top: 16),
+        margin: const EdgeInsets.all(20),
         height: Get.height,
         width: Get.width,
-        child: Column(
+        child: ListView(
           children: [
             ElevatedButton(
               onPressed: () {
