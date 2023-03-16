@@ -36,7 +36,7 @@ class TextsPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(shape: shapeSheetStyleBotton),
-              child: const AutoSizeTextApp(title: titleText01Line, textStyle: textStyleTitlesWhite),
+              child: const AutoSizeTextApp(maxLines: 1, title: titleText01Line, textStyle: textStyleTitlesWhite),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -49,7 +49,7 @@ class TextsPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(shape: shapeSheetStyleBotton),
-              child: const AutoSizeTextApp(title: titleText02Line, textStyle: textStyleTitlesWhite),
+              child: const AutoSizeTextApp(maxLines: 1, title: titleText02Line, textStyle: textStyleTitlesWhite),
             ),
           ],
         ),

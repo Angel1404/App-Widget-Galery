@@ -107,30 +107,3 @@ class TextWidgetBodyDetail02 extends StatelessWidget {
 }
 
 ''';
-
-const codeStringAutosize = '''
-
-class AutoSizeTextApp extends StatelessWidget {
-  const AutoSizeTextApp({super.key, required this.title, this.textStyle, this.textAlign, this.minFontSize, this.maxLines, this.fontSize});
-  final String title;
-  final TextStyle? textStyle;
-  final TextAlign? textAlign;
-  final double? minFontSize;
-  final int? maxLines;
-  final double? fontSize;
-  @override
-  Widget build(BuildContext context) {
-    return AutoSizeText(
-      title,
-      style: textStyle ?? const TextStyle(color: Colors.black87, fontSize: 16),
-      softWrap: true,
-      maxLines: maxLines ?? 3,
-      textAlign: textAlign ?? TextAlign.center,
-      minFontSize: minFontSize ?? 10,
-      stepGranularity: minFontSize ?? 10,
-      overflow: TextOverflow.ellipsis,
-    );
-  }
-}
-
-''';

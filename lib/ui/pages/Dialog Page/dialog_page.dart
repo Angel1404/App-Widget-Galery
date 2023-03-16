@@ -30,8 +30,9 @@ class DialogPage extends StatelessWidget {
                 showdialogClipNone(context);
               },
               style: ElevatedButton.styleFrom(shape: shapeSheetStyleBotton),
-              child: const AutoSizeTextApp(title: showdialogClipNoneText, textStyle: textStyleTitlesWhite),
+              child: const AutoSizeTextApp(title: showdialogClipNoneText, textStyle: textStyleTitlesWhite, maxLines: 1),
             ),
+            // ...List.generate(length, (index) => null)
           ],
         ),
       ),
